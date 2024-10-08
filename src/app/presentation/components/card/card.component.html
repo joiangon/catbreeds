@@ -1,13 +1,14 @@
 <ion-card class="card">
   <ion-item lines="none" class="card__item">
-    <ion-label class="card__label">Abyssinian</ion-label>
-    <ion-button slot="end" class="card__button">
-      <ion-icon class="card__icon" name="information-circle-outline"></ion-icon>
+    <ion-label class="card__label">{{ breed.name }}</ion-label>
+    <ion-button slot="end" class="card__button" shape="round">
+      {{ i18nMessage.buttonLabel }}
+      <ion-icon slot="end" class="card__icon" name="information-circle-outline"></ion-icon>
     </ion-button>
   </ion-item>
-  <ion-img src="https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg"></ion-img>
+    <img class="card__image" [src]="breed.reference_image_id | image">
   <ion-item lines="none" class="card__item">
-    <ion-label class="card__label">Egipto</ion-label>
-    <ion-label slot="end" class="card__label">Inteligencia</ion-label>
+    <ion-label class="card__label">{{ breed.origin }}</ion-label>
+    <ion-label slot="end" class="card__label">{{ i18nMessage.inteligence }} {{ breed.intelligence }}</ion-label>
   </ion-item>
 </ion-card>

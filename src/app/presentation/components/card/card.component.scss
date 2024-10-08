@@ -1,0 +1,26 @@
+.card {
+  display: flex;
+  width: 18.125rem;
+  height: 19.375rem;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  background: #fffbee;
+
+  &__image {
+    width: 14.25rem;
+    height: 12.25rem;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  &__item {
+    display: flex;
+    width: 16.375rem;
+    --background: #fffbee;
+  }
+
+  &__button {
+    --background: darkseagreen;
+  }
+}

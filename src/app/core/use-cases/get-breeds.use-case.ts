@@ -1,8 +1,8 @@
 import { GetBreedsEntity } from '../entities/get-breeds.entity';
-import { CardBreedsRepository } from '../repositories/cat-breeds.repository';
+import { CatBreedsRepository } from '../repositories/cat-breeds.repository';
 
 export class GetBreedsUseCase {
-  constructor(private repository: CardBreedsRepository){}
+  constructor(private repository: CatBreedsRepository){}
 
   public async getBreeds(): Promise<GetBreedsEntity[]> {
     return this.repository.getBreeds();

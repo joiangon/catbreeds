@@ -5,4 +5,5 @@ export interface GetBreedsEntity {
   origin: string;
   description: string;
   reference_image_id: string;
+  intelligence: string;
 }
