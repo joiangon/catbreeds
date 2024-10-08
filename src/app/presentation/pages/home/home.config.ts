@@ -1,7 +1,7 @@
 export const HomeConfig = Object.freeze({
-  searchBarPlaceHolder: '¿Cuál raza vas a buscar?',
+  searchBarPlaceHolder: 'What breed are you going to look for?',
   i18nCardMessages: {
-    buttonLabel: 'Más...',
-    inteligence: 'Inteligencia',
+    buttonLabel: 'More...',
+    intelligence: 'Intelligence:',
   }
 });

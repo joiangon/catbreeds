@@ -11,7 +11,6 @@
     width: 14.25rem;
     height: 12.25rem;
     object-fit: cover;
-    border-radius: 8px;
   }
 
   &__item {
@@ -22,5 +21,10 @@
 
   &__button {
     --background: darkseagreen;
+    --background-activated: darkseagreen;
+    --background-hover: darkseagreen;
+    --background-focused: darkseagreen;
+    --background-disabled: lightgray;
+    --ripple-color: transparent;
   }
 }

@@ -1,0 +1,27 @@
+<ion-header class="header">
+  <ion-toolbar class="header__toolbar">
+    <ion-button class="header__button" slot="start" (click) = "goBack()">
+      <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+    </ion-button>
+    <ion-title>{{ breed.name }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content" [fullscreen]="true">
+
+  <ion-item class="content__item" lines="none">
+    <ion-img class="content__image" [src]="breed.reference_image_id | image"></ion-img>
+  </ion-item>
+  <ion-item class="content__item" lines="none">
+    <ion-text>{{ breed.description }}</ion-text>
+  </ion-item>
+  <ion-item class="content__item" lines="none">
+    <ion-text>{{ breed.origin }}</ion-text>
+  </ion-item>
+  <ion-item class="content__item" lines="none">
+    <ion-text>{{config.i18nMessages.intelligence}} {{ breed.intelligence }}</ion-text>
+  </ion-item>
+  <ion-item class="content__item" lines="none">
+    <ion-text> {{ breed.temperament }}</ion-text>
+  </ion-item>
+</ion-content>

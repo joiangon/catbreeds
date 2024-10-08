@@ -1,0 +1,24 @@
+.header {
+  &__button {
+    --background: darkseagreen;
+    --background-activated: darkseagreen;
+    --background-hover: darkseagreen;
+    --background-focused: darkseagreen;
+    --background-disabled: lightgray;
+    --ripple-color: transparent;
+  }
+}
+.content {
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    padding: 18px;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+}

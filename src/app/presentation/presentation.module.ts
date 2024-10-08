@@ -11,6 +11,7 @@ import { CatBreedsRepository } from '../core';
 import { provideHttpClient } from '@angular/common/http';
 import { GetImagePipe } from './pipes/get-image.pipe';
 import { SearchBarComponent } from './components/searchbar/search-bar-component.component';
+import { BreedDetailPage } from './pages/breed-detail/breed-detail.page';
 
 const INTERACTOR_PROVIDER = {
   provide: CatBreedsInteractor,
@@ -24,7 +25,7 @@ const INTERACTOR_PROVIDER = {
     IonicModule,
     PresentationRoutingModule,
   ],
-  declarations: [HomePage, CardComponent, SearchBarComponent, GetImagePipe],
+  declarations: [HomePage, BreedDetailPage, CardComponent, SearchBarComponent, GetImagePipe],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [INTERACTOR_PROVIDER],
 })
