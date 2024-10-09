@@ -3,10 +3,10 @@ import { Injectable } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
 import { GetBreedsEntity } from 'src/app/core/entities/get-breeds.entity';
 import { CatBreedsRepository } from 'src/app/core';
+import { environment } from 'src/environments/environment';
 
-const URL = 'https://api.thecatapi.com/v1/';
+const URL = environment.API_BREEDS_URL;
 const BREEDS_PATH = 'breeds';
-const IMAGE_PATH = 'images';
 @Injectable({
   providedIn: 'root',
 })
