@@ -2,7 +2,7 @@
   <ion-item lines="none" class="card__item">
     <ion-label class="card__label">{{ breed.name }}</ion-label>
     <ion-button (click) = "goTo()" slot="end" class="card__button" shape="round">
-      {{ i18nMessage.buttonLabel }}
+      {{ i18nMessage.buttonLabel | titlecase }}
       <ion-icon slot="end" class="card__icon" name="information-circle-outline"></ion-icon>
     </ion-button>
   </ion-item>
