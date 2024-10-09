@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { SplashScreen } from '@capacitor/splash-screen';
-require('dotenv').config();
 
 @Component({
   selector: 'app-root',
